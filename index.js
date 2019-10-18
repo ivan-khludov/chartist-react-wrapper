@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 class ChartistGraph extends Component {
 
-  displayName: 'ChartistGraph'
+  // displayName: 'ChartistGraph'
 
   componentWillReceiveProps(newProps) {
     this.updateChart(newProps);

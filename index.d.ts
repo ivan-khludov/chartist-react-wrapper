@@ -12,7 +12,8 @@ export interface ChartistGraphProps {
   type: string;
   data: object;
   className?: string;
-  options?: IChartOptions;
+  // options?: IChartOptions;
+  options?: ILineChartOptions | IBarChartOptions | IPieChartOptions;
   responsiveOptions?: Array<IResponsiveOptionTuple<ILineChartOptions>> | Array<IResponsiveOptionTuple<IPieChartOptions>> | Array<IResponsiveOptionTuple<IBarChartOptions>>;
   style?: React.CSSProperties;
   listener?: object;
