@@ -41,7 +41,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "typescript": "3.6.3",
+    "typescript": "3.6.3"
   },
   "dependencies": {
     "@types/react": "^16.7.17",
