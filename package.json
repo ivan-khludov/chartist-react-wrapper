@@ -37,7 +37,7 @@
     "react": "^15.0.0 || ^16.0.0"
   },
   "scripts": {
-    "build": "mkdir -p dist && ./node_modules/babel-cli/bin/babel.js index.jsx -o dist/index.js && cp index.d.ts dist/index.d.ts",
+    "build": "mkdir -p dist && node ./node_modules/babel-cli/bin/babel.js index.jsx -o dist/index.js && cp index.d.ts dist/index.d.ts",
     "prepublishOnly": "npm run build",
     "postinstall": "npm run build"
   },
