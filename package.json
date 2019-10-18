@@ -1,0 +1,57 @@
+{
+  "name": "chartist-react-wrapper",
+  "version": "1.0.1",
+  "description": "React component for Chartist.js",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Zagorakiss/chartist-react-wrapper.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "chartist",
+    "chart",
+    "graph",
+    "diagram"
+  ],
+  "author": {
+    "name": "Sergey Rastorguev",
+    "email": "zagorakom@gmail.com"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zagorakiss/chartist-react-wrapper/issues"
+  },
+  "homepage": "https://github.com/Zagorakiss/chartist-react-wrapper",
+  "peerDependencies": {
+    "chartist": "^0.11.4",
+    "react": "^15.0.0 || ^16.0.0"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && babel index.js -o dist/index.js && cp index.d.ts dist/index.d.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "3.6.3",
+  },
+  "dependencies": {
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "@types/chartist": "^0.9.43",
+    "typescript": "3.6.3",
+    "prop-types": "^15.5.8"
+  }
+}
