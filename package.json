@@ -38,7 +38,8 @@
   },
   "scripts": {
     "build": "mkdir -p dist && babel index.js -o dist/index.js && cp index.d.ts dist/index.d.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "@types/chartist": "^0.9.43",
